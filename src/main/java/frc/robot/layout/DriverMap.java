@@ -16,11 +16,11 @@ public abstract class DriverMap extends CommandMap {
   public DriverMap(GameController controller) {
     super(controller);
   }
-
+// gets the forward and rotational input movements (using double)
   abstract double getKitDrivetrainRot();
 
   abstract double getKitDrivetrainForward();
-
+// defines drive train
   private void registerDrivetrain() {
     if (ExampleConfig.Subsystems.DRIVETRAIN_ENABLED) {
       var drivetrain = kitdrivetrain.getInstance();

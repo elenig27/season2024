@@ -15,12 +15,12 @@ public class TwoJoyStickDriverMap extends DriverMap {
   public TwoJoyStickDriverMap(GameController controller) {
     super(controller);
   }
-
+// assigning right joystick value input
   @Override
   public double getKitDrivetrainRot() {
     return controller.getAxis(Axis.AXIS_RIGHT_X);
   }
-
+// left joystick value input
   @Override
   public double getKitDrivetrainForward() {
     return controller.getAxis(Axis.AXIS_LEFT_Y);
